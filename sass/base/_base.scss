@@ -1,0 +1,19 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  /* border-box makes total width/height include paddings/margins */
+  box-sizing: inherit;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+/* Everything font related better to be placed in the body than in *    ;*/
+body {
+  /* not inherited */
+  padding: 3rem;
+  box-sizing: border-box;
+}
