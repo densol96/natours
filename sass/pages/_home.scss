@@ -1,0 +1,19 @@
+.section-about {
+  padding-top: 12.5rem;
+  background-color: var(--color-grey--light-1);
+}
+
+.section-features {
+  padding: 20rem 0;
+  background-color: var(--color-grey--light-1);
+  background-image: linear-gradient(
+      to right bottom,
+      rgba(40, 180, 133, 0.795),
+      rgba(126, 213, 111, 0.801)
+    ),
+    url("../img/hero.jpg");
+  background-size: cover;
+  // background-position: center;
+  // clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
+  // position: relative;
+}
