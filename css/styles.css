@@ -5,6 +5,7 @@
   --color-grey--light-1: #f7f7f7;
   --color-white: #fff;
   --font-size-default: 1.6rem;
+  --shadow-default: 0 1.5rem 4rem rgba(0, 0, 0, 0.15);
 }
 
 * {
@@ -157,10 +158,20 @@ body {
   margin-bottom: 1.5rem;
 }
 
+.u-gap-medium {
+  gap: 5rem !important;
+}
+
 .section-about {
   padding-top: 12.5rem;
   background-color: var(--color-grey--light-1);
-  height: 70vh;
+}
+
+.section-features {
+  padding: 20rem 0;
+  background-color: var(--color-grey--light-1);
+  background-image: linear-gradient(to right bottom, rgba(40, 180, 133, 0.795), rgba(126, 213, 111, 0.801)), url("../img/hero.jpg");
+  background-size: cover;
 }
 
 .header {
@@ -295,6 +306,19 @@ body {
   transform: scale(1.1);
   outline: 1rem solid var(--color-primary);
   outline-offset: 3rem;
+}
+
+.feature-box {
+  background-color: rgba(255, 255, 255, 0.8);
+  font-size: 1.5rem;
+  padding: 2.5rem;
+  text-align: center;
+  border-radius: 3px;
+  box-shadow: var(--shadow-default);
+}
+.feature-box__icon {
+  font-size: 6rem;
+  margin-bottom: 0.5rem;
 }
 
 /*# sourceMappingURL=styles.css.map */
