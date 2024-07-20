@@ -1,10 +1,11 @@
 .section-about {
-  padding-top: 12.5rem;
+  padding: 30rem 0;
   background-color: var(--color-grey--light-1);
+  margin: -20vh 0;
 }
 
 .section-features {
-  padding: 20rem 0;
+  padding: 30rem 0;
   background-color: var(--color-grey--light-1);
   background-image: linear-gradient(
       to right bottom,
@@ -13,7 +14,10 @@
     ),
     url("../img/hero.jpg");
   background-size: cover;
-  // background-position: center;
-  // clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
-  // position: relative;
+  clip-path: polygon(0 15%, 100% 0, 100% 85%, 0 100%);
+}
+
+.section-tours {
+  padding: 30rem 0;
+  margin: -20vh 0;
 }
