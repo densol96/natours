@@ -50,11 +50,14 @@ body {
   background-image: linear-gradient(
     to right,
     var(--color-primary--light),
-    var(--color-primary--light)
+    var(--color-primary--dark)
   );
   display: inline-block;
   background-clip: text;
   color: transparent;
+}
+
+.scewed-text {
   transition: all 0.2s;
 
   &:hover {

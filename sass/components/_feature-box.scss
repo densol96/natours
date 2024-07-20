@@ -5,12 +5,15 @@
   text-align: center;
   border-radius: 3px;
   box-shadow: var(--shadow-default);
+  transition: all 300ms;
+
+  &:hover {
+    transform: translateY(-1.5rem) scale(1.03);
+  }
 
   &__icon {
     font-size: 6rem;
     margin-bottom: 0.5rem;
-  }
-
-  &__text {
+    padding: 0 1rem;
   }
 }
