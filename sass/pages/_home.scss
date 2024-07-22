@@ -18,6 +18,13 @@
 }
 
 .section-tours {
-  padding: 30rem 0;
-  margin: -20vh 0;
+  padding: 30rem 0 15rem;
+  margin: -20vh 0 0;
+}
+
+.section-stories {
+  padding: 15rem 0;
+  position: relative;
+  background-color: rgba(255, 255, 255, 0.438);
+  // z-index: 1;
 }
