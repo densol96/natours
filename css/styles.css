@@ -269,6 +269,43 @@ body {
   background-color: var(--color-grey--light-1);
 }
 
+.footer {
+  background-color: #333;
+  padding: 10rem 0;
+  font-size: 1.4rem;
+}
+.footer__logo {
+  width: 15rem;
+}
+.footer__navigation {
+  border-top: 1px solid #777;
+  padding-top: 3rem;
+  margin-right: 38rem;
+}
+.footer__list {
+  list-style: none;
+  display: flex;
+  gap: 1.5rem;
+}
+.footer__link {
+  background-color: #333;
+  color: #f7f7f7;
+  text-decoration: none;
+  text-transform: uppercase;
+  display: inline-block;
+  transition: all 100ms;
+}
+.footer__link:hover {
+  cursor: pointer;
+  color: #55c57a;
+  box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.4);
+  transform: rotate(5deg) scale(1.2);
+}
+.footer__copyright {
+  border-top: 1px solid #777;
+  padding-top: 3rem;
+}
+
 .btn {
   text-transform: uppercase;
   padding: 1.5rem 4rem;
