@@ -10,6 +10,14 @@
     <link rel="stylesheet" href="css/icon-font.css" />
     <link rel="stylesheet" href="css/styles.css" />
     <link rel="shortcut icon" type="image/png" href="img/favicon.png" />
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+    ></script>
     <title>Natours | Exciting tours for adventurous people</title>
   </head>
   <body>
@@ -285,7 +293,102 @@
           >
         </div>
       </section>
+      <section class="section-book">
+        <div class="container">
+          <div class="book">
+            <form action="#" class="form">
+              <div class="u-margin-bottom-medium">
+                <h2 class="heading-secondary gradient-text scewed-text">
+                  Start booking now
+                </h2>
+              </div>
+              <div class="form__group">
+                <input
+                  type="text"
+                  class="form__input"
+                  placeholder="Full Name"
+                  id="name"
+                  required
+                />
+                <label for="name" class="form__label">Full name</label>
+              </div>
+              <div class="form__group">
+                <input
+                  type="email"
+                  class="form__input"
+                  placeholder="Email"
+                  id="email"
+                  required
+                />
+                <label for="email" class="form__label">Email</label>
+              </div>
+              <div class="form__radio-group-holder">
+                <div class="form__radio-group">
+                  <input
+                    type="radio"
+                    class="form__radio-input"
+                    id="small"
+                    name="size"
+                    required
+                  />
+                  <label for="small" class="form__radio-label">
+                    <span class="form__radio-button"></span>
+                    Small tour group
+                  </label>
+                </div>
+                <div class="form__radio-group">
+                  <input
+                    type="radio"
+                    class="form__radio-input"
+                    id="large"
+                    name="size"
+                    required
+                  />
+                  <label for="large" class="form__radio-label">
+                    <span class="form__radio-button"></span>
+                    Large tour group
+                  </label>
+                </div>
+              </div>
+              <div class="form__group u-center-text u-margin-top-medium">
+                <button class="btn btn--green btn--animated">
+                  <span class="btn-with-icon">
+                    Next step
+                    <ion-icon
+                      class="icon"
+                      name="arrow-forward-outline"
+                    ></ion-icon
+                  ></span>
+                </button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </section>
     </main>
-    <footer></footer>
+    <footer class="footer">
+      <div class="footer__logo-box">
+        <img src="/img/logo-green-2x.png" alt="Full logo" class="footer-logo" />
+      </div>
+      <div class="container">
+        <div>
+          <nav>
+            <ul class="footer__list">
+              <li href="#" class="footer__item footer__link">Company</li>
+              <li href="#" class="footer__item footer__link">Contact us</li>
+              <li href="#" class="footer__item footer__link">Careers</li>
+              <li href="#" class="footer__item footer__link">Privacy policy</li>
+              <li href="#" class="footer__item footer__link">Terms</li>
+            </ul>
+          </nav>
+        </div>
+        <div>
+          <p class="footer__copyright">
+            Built by <a href="#" class="footer__link">Deniss Solovjovs</a> by
+            following Jonas Schmedtmann's course on Udemy.
+          </p>
+        </div>
+      </div>
+    </footer>
   </body>
 </html>
