@@ -1,3 +1,8 @@
+.stories-container {
+  display: flex;
+  flex-direction: column;
+  gap: var(--gap-medium);
+}
 .story {
   width: 75%;
   margin: 0 auto;

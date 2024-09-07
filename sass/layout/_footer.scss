@@ -1,3 +1,10 @@
+.footer-container {
+  display: flex;
+
+  & > * {
+  }
+}
+
 .footer {
   background-color: $color-grey-dark-3;
   padding: 10rem 0;
@@ -10,7 +17,7 @@
   &__navigation {
     border-top: 1px solid $color-grey-dark;
     padding-top: 3rem;
-    margin-right: 38rem;
+    flex-grow: 1;
   }
 
   &__list {
@@ -38,5 +45,6 @@
   &__copyright {
     border-top: 1px solid $color-grey-dark;
     padding-top: 3rem;
+    flex-grow: 1;
   }
 }

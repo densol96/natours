@@ -27,6 +27,7 @@ $breakpoint argument choices:
   --font-size-default: 1.6rem;
   --shadow-default: 0 1.5rem 4rem rgba(0, 0, 0, 0.15);
   --linear-gradient-default: linear-gradient(to right bottom, #7ed56f, #28b485);
+  --gap-medium: 5rem;
 }
 
 * {
@@ -43,11 +44,6 @@ a {
 .container {
   width: 70%;
   margin: 0 auto;
-  display: flex;
-  gap: 1rem;
-}
-.container > div {
-  flex: 1;
 }
 
 @keyframes moveInleft {
@@ -302,6 +298,9 @@ body {
   background-color: var(--color-grey--light-1);
 }
 
+.footer-container {
+  display: flex;
+}
 .footer {
   background-color: #333;
   padding: 10rem 0;
@@ -313,7 +312,7 @@ body {
 .footer__navigation {
   border-top: 1px solid #777;
   padding-top: 3rem;
-  margin-right: 38rem;
+  flex-grow: 1;
 }
 .footer__list {
   list-style: none;
@@ -337,6 +336,7 @@ body {
 .footer__copyright {
   border-top: 1px solid #777;
   padding-top: 3rem;
+  flex-grow: 1;
 }
 
 .navigation__checkbox {
@@ -457,6 +457,14 @@ body {
   bottom: 1rem;
 }
 
+.about-container {
+  display: flex;
+  gap: 1rem;
+}
+.about-container > div {
+  flex: 1;
+}
+
 .btn {
   text-transform: uppercase;
   padding: 1.5rem 4rem;
@@ -568,6 +576,12 @@ body {
   outline-offset: 3rem;
 }
 
+.features-container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: var(--gap-medium);
+}
+
 .feature-box {
   background-color: rgba(255, 255, 255, 0.8);
   font-size: 1.5rem;
@@ -584,6 +598,12 @@ body {
   font-size: 6rem;
   margin-bottom: 0.5rem;
   padding: 0 1rem;
+}
+
+.cards-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  column-gap: var(--gap-medium);
 }
 
 .card {
@@ -696,6 +716,12 @@ body {
 .card__price-value {
   font-size: 6rem;
   font-weight: 300;
+}
+
+.stories-container {
+  display: flex;
+  flex-direction: column;
+  gap: var(--gap-medium);
 }
 
 .story {
