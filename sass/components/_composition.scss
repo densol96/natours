@@ -1,6 +1,35 @@
+.about-container {
+  display: flex;
+  gap: 1rem;
+  align-items: start;
+
+  @include respond(tab-land) {
+    margin-top: 9rem;
+    gap: var(--gap-medium);
+  }
+
+  @include respond(tab-port) {
+    flex-direction: column;
+
+    .container-item {
+      width: 100%;
+      z-index: 10000;
+    }
+  }
+
+  & > div {
+    flex: 1;
+  }
+}
+
 .composition {
   position: relative;
   display: flex;
+
+  @include respond(tab-land) {
+    margin-top: 9rem;
+    gap: var(--gap-medium);
+  }
 
   &:hover &__photo:not(:hover) {
     transform: scale(0.95);

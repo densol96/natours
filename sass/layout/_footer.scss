@@ -1,7 +1,10 @@
 .footer-container {
   display: flex;
 
-  & > * {
+  @include respond(tab-land) {
+    flex-direction: column;
+    align-items: center;
+    gap: 3rem;
   }
 }
 
