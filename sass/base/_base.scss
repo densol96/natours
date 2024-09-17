@@ -36,6 +36,18 @@
   box-sizing: border-box;
 }
 
+body {
+  padding: 2rem;
+
+  @include respond(tab-land) {
+    padding: 1rem;
+  }
+
+  @include respond(tab-port) {
+    padding: 0rem;
+  }
+}
+
 a {
   text-decoration: none;
   color: inherit;
@@ -44,4 +56,8 @@ a {
 .container {
   width: 70%;
   margin: 0 auto;
+
+  @include respond(phone) {
+    width: 80%;
+  }
 }

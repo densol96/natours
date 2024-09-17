@@ -8,8 +8,14 @@
     grid-template-columns: repeat(2, 1fr);
   }
 
+  @include respond(tab-land) {
+    margin-top: 0rem;
+    grid-template-columns: repeat(2, 1fr);
+  }
+
   @include respond(phone) {
     margin-top: 9rem;
+    margin-bottom: 9rem;
     grid-template-columns: 1fr;
   }
 }

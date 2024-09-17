@@ -40,6 +40,11 @@
     border-radius: 50%;
     box-shadow: 0 1rem 3rem rgba($color-black, 0.1);
     cursor: pointer;
+
+    @include respond(tab-port) {
+      top: 4rem;
+      right: 4rem;
+    }
   }
 
   &__background {
@@ -55,6 +60,11 @@
     );
     z-index: 90;
     transition: transform 800ms cubic-bezier(0.86, 0, 0.07, 1);
+
+    @include respond(tab-port) {
+      top: 4.5rem;
+      right: 4.5em;
+    }
   }
 
   &__nav {

@@ -2,6 +2,10 @@
   padding: 30rem 0;
   background-color: var(--color-grey--light-1);
   margin: -20vh 0;
+
+  @include respond(tab-port) {
+    // padding: 20rem 0;
+  }
 }
 
 .section-features {
@@ -15,23 +19,44 @@
     url("../img/hero.jpg");
   background-size: cover;
   clip-path: polygon(0 15%, 100% 0, 100% 85%, 0 100%);
+
+  @include respond(tab-port) {
+    padding: 25rem 0;
+  }
+
+  @include respond(phone) {
+    padding: 10rem 0;
+    clip-path: polygon(0 5%, 100% 0, 100% 95%, 0 100%);
+    margin: 10rem 0;
+  }
 }
 
 .section-tours {
   padding: 30rem 0 15rem;
   margin: -20vh 0 0;
+
+  @include respond(tab-port) {
+    padding: 25rem 0 10rem;
+  }
 }
 
 .section-stories {
   padding: 15rem 0;
   position: relative;
   background-color: rgba(255, 255, 255, 0.438);
-  // z-index: 1;
+
+  @include respond(tab-port) {
+    padding: 10rem 0;
+  }
 }
 
 .section-book {
   padding: 15rem 0;
   background-image: var(--linear-gradient-default);
+
+  @include respond(tab-port) {
+    padding: 10rem 0;
+  }
 }
 
 .book {

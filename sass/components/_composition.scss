@@ -28,7 +28,7 @@
 
   @include respond(tab-land) {
     margin-top: 9rem;
-    gap: var(--gap-medium);
+    gap: 0;
   }
 
   &:hover &__photo:not(:hover) {
@@ -47,17 +47,39 @@
     position: absolute;
     transition: all 300ms;
 
+    @include respond(tab-port) {
+      position: relative;
+      width: 33.3%;
+      box-shadow: 0 1.5rem 3rem rgba(0, 0, 0, 0.2);
+    }
+
     &--p1 {
       left: 0;
       top: -2rem;
+
+      @include respond(tab-port) {
+        top: 0rem;
+        transform: scale(1.2);
+      }
     }
     &--p2 {
       right: 0;
       top: 2rem;
+
+      @include respond(tab-port) {
+        top: -1rem;
+        transform: scale(1.3);
+        z-index: 5;
+      }
     }
     &--p3 {
       left: 20%;
       top: 10rem;
+      @include respond(tab-port) {
+        top: 0rem;
+        left: 0;
+        transform: scale(1.1);
+      }
     }
 
     &:hover {

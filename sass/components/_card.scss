@@ -8,7 +8,7 @@
     row-gap: var(--gap-medium);
   }
 
-  @include respond(phone) {
+  @include respond(tab-port) {
     grid-template-columns: 1fr;
   }
 }
@@ -26,7 +26,16 @@
     }
   }
 
+  @include respond(tab-land) {
+    width: 80%;
+    justify-self: center;
+    &:last-child {
+      grid-column: 1;
+    }
+  }
+
   @include respond(phone) {
+    width: 100%;
     &:last-child {
       grid-column: 1;
       width: 100%;
@@ -202,5 +211,79 @@
   &__price-value {
     font-size: 6rem;
     font-weight: 300;
+  }
+
+  @include respond(tab-port) {
+    height: auto;
+
+    &__side {
+      position: relative;
+      height: auto;
+
+      &--front {
+        background-color: white;
+        padding-bottom: 5rem;
+      }
+
+      &--back {
+        transform: rotateY(0deg);
+        clip-path: polygon(0 15%, 100% 0, 100% 100%, 0 100%);
+        margin-top: -6rem;
+      }
+    }
+
+    &:hover &__side--front {
+      transform: rotateY(0deg);
+    }
+
+    &:hover &__side--back {
+      transform: rotateY(0deg);
+    }
+
+    &__picture {
+      height: 30rem;
+      clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
+    }
+
+    &__details {
+      ul {
+        li {
+          font-size: 2rem;
+        }
+      }
+    }
+
+    &__cta {
+      // &::before {
+      //   content: "";
+      //   position: absolute;
+      //   top: 0;
+      //   left: 0;
+      //   width: 100%;
+      //   height: 100%;
+      //   background-color: green;
+      // }
+
+      position: relative;
+      top: 0%;
+      left: 0%;
+      transform: translate(0%, 0%);
+      text-align: center;
+      padding: 5rem 0;
+    }
+
+    &__price-box {
+      text-align: center;
+      color: white;
+    }
+
+    &__price-only {
+      font-size: 1.4rem;
+    }
+
+    &__price-value {
+      font-size: 6rem;
+      font-weight: 300;
+    }
   }
 }

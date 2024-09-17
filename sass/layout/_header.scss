@@ -12,6 +12,12 @@
   clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
   position: relative;
 
+  @include respond(tab-land) {
+    height: 100vh;
+    clip-path: polygon(0 0, 100% 0, 100% 90%, 0 100%);
+    margin-bottom: 5rem;
+  }
+
   &::after {
     position: absolute;
     content: "";
@@ -26,10 +32,19 @@
     position: absolute;
     top: 4rem;
     left: 4rem;
+
+    @include respond(tab-land) {
+      top: 7rem;
+      left: 7rem;
+    }
   }
 
   &__logo {
     height: 3.5rem;
+
+    @include respond(tab-land) {
+      height: 4.2rem;
+    }
   }
 
   &__text-box {
