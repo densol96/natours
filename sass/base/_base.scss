@@ -57,7 +57,15 @@ a {
   width: 70%;
   margin: 0 auto;
 
-  @include respond(phone) {
+  @include respond(tab-land) {
+    width: 75%;
+  }
+
+  @include respond(tab-port) {
     width: 80%;
+  }
+
+  @include respond(phone) {
+    width: 85%;
   }
 }

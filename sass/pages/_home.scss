@@ -67,6 +67,35 @@
       transparent 50.1%
     ),
     url("/img/nat-10.jpg");
+
+  @include respond(tab-land) {
+    background-image: linear-gradient(
+        100deg,
+        rgba(255, 255, 255, 0.9) 0%,
+        rgba(255, 255, 255, 0.9) 60%,
+        transparent 60.1%
+      ),
+      url("/img/nat-10.jpg");
+  }
+
+  @include respond(tab-port) {
+    background-image: linear-gradient(
+        to right,
+        rgba(255, 255, 255, 0.9) 0%,
+        rgba(255, 255, 255, 0.9) 65%,
+        transparent 65.1%
+      ),
+      url("/img/nat-10.jpg");
+  }
+
+  @include respond(phone) {
+    background-image: linear-gradient(
+        to right,
+        rgba(255, 255, 255, 0.9) 0%,
+        rgba(255, 255, 255, 0.9) 100%
+      ),
+      url("/img/nat-10.jpg");
+  }
   background-size: cover;
   width: 100%;
   box-shadow: var(--shadow-default);

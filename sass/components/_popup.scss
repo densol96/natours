@@ -22,6 +22,9 @@
     // overflow: hidden;
     display: flex;
     transition: all 400ms 300ms;
+    @include respond(tab-port) {
+      flex-direction: column;
+    }
   }
 
   &:target {
@@ -40,6 +43,10 @@
     display: flex;
     flex-direction: column;
     flex-shrink: 0;
+
+    @include respond(tab-port) {
+      flex-direction: row;
+    }
   }
 
   &__right {
@@ -52,6 +59,10 @@
 
   &__img {
     width: 100%;
+
+    @include respond(tab-port) {
+      width: 50%;
+    }
   }
 
   &__text {
