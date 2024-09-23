@@ -6,11 +6,20 @@
       rgba(40, 180, 133, 0.795),
       rgba(126, 213, 111, 0.801)
     ),
-    url("../img/hero.jpg");
+    url("../img/hero-small.jpg");
   background-size: cover;
   background-position: center;
   clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
   position: relative;
+
+  @media (min-resolution: 192dpi) and (min-width: 37.5em), (min-width: 125em) {
+    background-image: linear-gradient(
+        to right bottom,
+        rgba(40, 180, 133, 0.795),
+        rgba(126, 213, 111, 0.801)
+      ),
+      url("../img/hero.jpg");
+  }
 
   @include respond(tab-land) {
     height: 100vh;
